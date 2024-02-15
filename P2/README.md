@@ -50,4 +50,10 @@ ip link set vxlan10 master br0 : De manière similaire à eth1, cette commande a
 
 
 
+## Multicast
+
+To test multicast, 
+Run multicasttest.py in host 1,
+To have more fun , add a host3 connected to router2 ( add `ip link set eth2 master br0`) in config.sh
+then run the multicasttest.py will using wireshark 
 
