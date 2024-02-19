@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$HOSTNAME" = "router1" ]; then
+if [ "$HOSTNAME" = "viporten-1" ]; then
 	ip addr add 10.1.1.1/24 dev eth0
 	if [ "$1" = "unicast" ]; then
 		ip link add name vxlan10 type vxlan id 10 dev eth0 remote 10.1.1.2 dstport 4789 
