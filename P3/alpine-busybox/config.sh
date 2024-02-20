@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ "$HOSTNAME" = "fcatinau-1" ]; then
+if [ "$HOSTNAME" = "host_fcatinau-1" ]; then
 	ip addr add 20.1.1.1/24 dev eth0
 
-elif [ "$HOSTNAME" = "fcatinau-2" ]; then
+elif [ "$HOSTNAME" = "host_fcatinau-2" ]; then
 	ip addr add 20.1.1.2/24 dev eth0
 
 else
