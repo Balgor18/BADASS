@@ -9,4 +9,8 @@ RUN \
   /etc/frr/daemons
 
 COPY ./config.sh /config.sh
+COPY ./confRR /confRR
+COPY ./confR1 /confR1
+COPY ./confR2 /confR2
+COPY ./confR3 /confR3
 RUN chmod +x /config.sh

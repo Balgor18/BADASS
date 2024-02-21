@@ -1,3 +1,4 @@
+conf 
 hostname router_viporten-3
 no ipv6 forwarding
 !

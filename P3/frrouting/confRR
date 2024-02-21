@@ -1,4 +1,5 @@
-hostname router_edal--ce-1
+conf 
+hostname router_viporten-1
 no ipv6 forwarding
 !
 interface eth0
