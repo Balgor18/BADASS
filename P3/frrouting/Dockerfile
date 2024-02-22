@@ -13,4 +13,7 @@ COPY ./confRR /confRR
 COPY ./confR1 /confR1
 COPY ./confR2 /confR2
 COPY ./confR3 /confR3
+COPY ./run.sh /run.sh
+
+RUN chmod +x /run.sh
 RUN chmod +x /config.sh

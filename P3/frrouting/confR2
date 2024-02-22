@@ -1,5 +1,5 @@
 conf 
-hostname router_viporten-3
+hostname routeur_viporten-3
 no ipv6 forwarding
 !
 interface eth0
