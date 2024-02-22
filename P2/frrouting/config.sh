@@ -1,6 +1,14 @@
 #!/bin/sh
+if [ "$1" == "" ]; then
+	echo "need to provide an arg : unicast or multicast"
+	exit 1
+fi
+if [[ "$1" != "unicast" && "$1" != "multicast" ]]; then
+	echo "bad arg, unicast or multicast valide only"
+	exit 1
+fi
 
-if [ "$HOSTNAME" = "router_viporten-1" ]; then
+if [ "$HOSTNAME" = "routeur_viporten-1" ]; then
 	ip addr add 10.1.1.1/24 dev eth0
 	if [ "$1" = "unicast" ]; then
 		ip link add name vxlan10 type vxlan id 10 dev eth0 remote 10.1.1.2 dstport 4789 
