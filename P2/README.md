@@ -57,3 +57,18 @@ Run multicasttest.py in host 1,
 To have more fun , add a host3 connected to router2 ( add `ip link set eth2 master br0`) in config.sh
 then run the multicasttest.py will using wireshark 
 
+# Definition
+### VXLAN vs VLAN :
+VXLAN (Virtual Extensible LAN) permet de créer des réseaux logiques sur un même réseau physique à grande échelle, dépassant la limite des 4096 VLANs.   
+Contrairement au VLAN, VXLAN utilise des tunnels IP pour étendre le réseau à travers différents segments.
+
+### Switch : 
+Un switch est un dispositif de réseau qui connecte plusieurs appareils au sein d'un LAN, utilisant l'adresse MAC pour acheminer les données au bon destinataire.
+
+
+### Bridge : 
+Un bridge, est un dispositif qui connecte deux réseaux ou segments de réseau, agissant au niveau de la couche 2 (liaison de données) pour filtrer, acheminer ou bloquer le trafic.
+
+### Broadcast vs Multicast : 
+Broadcast envoie des informations à tous les utilisateurs du réseau, tandis que multicast les envoie à un groupe spécifique d'utilisateurs, optimisant ainsi la bande passante.
+(packet UDP)
