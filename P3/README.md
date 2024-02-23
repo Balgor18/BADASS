@@ -51,7 +51,7 @@ address-family l2vpn evpn
 neighbor LEAFS route-reflector-client
 ```
 
-au dessus de cela je dois configurer le Vxlan sans specifier les ip (configurer plus tard dans vtysh)   
+au dessus de cela je dois configurer le Vxlan sans specifier les ip (configurer plus tard dans vtysh)   [sur les router et pas le RR]
 ```sh
 #!/bin/sh
 
