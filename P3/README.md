@@ -1,4 +1,4 @@
-##BGP (Border Gateway Protocol)
+# BGP (Border Gateway Protocol)
 
 ## EVPN (Ethernet virtual private network)
 
